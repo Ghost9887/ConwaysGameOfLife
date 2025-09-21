@@ -2,7 +2,8 @@
 #define UI_H
 
 #include "common.h"
+#include "cell.h"
 
-  void updateUI(Camera2D *camera);
+  void updateUI(Camera2D *camera, Cell *cellArr);
 
 #endif

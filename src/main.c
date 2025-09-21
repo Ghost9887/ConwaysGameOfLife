@@ -36,7 +36,7 @@ int main(){
           }
         }
         drawGrid();
-        updateUI(&camera);
+        updateUI(&camera, cellArr);
       EndMode2D();
     EndDrawing();
   }

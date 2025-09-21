@@ -11,9 +11,9 @@
 #define SCREENHEIGHT 1300 
 #define TARGETFPS 60 
 
-#define CELLSIZE 20 //10x10
-#define GRIDWIDTH 40
-#define GRIDHEIGHT 40 // cells
+#define CELLSIZE 5 //10x10
+#define GRIDWIDTH 200
+#define GRIDHEIGHT 200 // cells
 
 typedef struct{
   int id;

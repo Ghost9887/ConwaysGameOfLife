@@ -21,6 +21,24 @@ void initCellArr(Cell *cellArr){
   }
 }
 
+void randomizeGrid(Cell *cellArr){
+  for(int i = 0; i < (GRIDWIDTH * GRIDHEIGHT); i++){
+    int randValue = GetRandomValue(1, 3);
+    if(randValue == 1){
+      cellArr[i].alive = true;
+    }
+    else{
+      cellArr[i].alive = false;
+    }
+  }
+}
+
+void clearGrid(Cell *cellArr){
+  for(int i = 0; i < (GRIDWIDTH * GRIDHEIGHT); i++){
+    cellArr[i].alive = false;
+  }
+}
+
 void drawCells(Cell *cellArr){
   for(int i = 0; i < (GRIDWIDTH * GRIDHEIGHT); i++){
     if(cellArr[i].alive){
